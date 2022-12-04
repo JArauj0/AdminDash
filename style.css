@@ -1,0 +1,35 @@
+:root {
+    size: 16px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.sidebar {
+    background-color: #1e97f3;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-title {
+    font-size: 2rem; 
+}
+
+.sidebar-title, .mainlinks, .seclinks {
+    /* margin-left: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem; */
+    margin: 1rem;
+
+}
+
+.header, .content {
+    margin: 1rem;
+}
+
+.content {
+    background-color: lightgray;
+}
