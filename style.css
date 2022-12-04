@@ -4,7 +4,7 @@
 
 .main {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 .sidebar {
@@ -12,10 +12,6 @@
     color: white;
     display: flex;
     flex-direction: column;
-}
-
-.sidebar-title {
-    font-size: 2rem; 
 }
 
 .sidebar-title, .mainlinks, .seclinks {
@@ -26,10 +22,49 @@
 
 }
 
+.sidebar-title, .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0.5em;
+}
+
+.title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
 .header, .content {
     margin: 1rem;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.searchbar {
+    border-radius: 2em;
+}
+
+.header-top, .sbRH {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
 .content {
     background-color: lightgray;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.trending {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.yourProjects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
 }
