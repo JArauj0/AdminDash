@@ -1,0 +1,20 @@
+.global {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+.sidebar {
+    background-color: #38bdf8;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 300%;
+    background-color: light;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: lightgray;
+}
