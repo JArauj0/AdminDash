@@ -1,20 +1,39 @@
-.global {
+body {
     display: grid;
-    grid-template-columns: 30% 70%;
+}
+
+img {
+    max-width: 10%;
 }
 
 .sidebar {
     background-color: #38bdf8;
+    grid-row: 1/3;
+    color: white;
+    padding: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
-.main {
-    display: grid;
-    grid-template-rows: 300%;
-    background-color: light;
+.dashboard, .home, .profile, .messages, .history, .tasks, .communities, .settings, .support, .privacy {
+    display: flex;
+    align-items: center;
 }
 
-.nav {
-    display: grid;
-    grid-template-columns: 80% 20%;
-    background-color: lightgray;
+img > div {
+    max-width: 10%;
 }
+
+.searchbar {
+    grid-column: 2/5;
+    height: 10vh;
+}
+
+.main-content {
+    overflow: auto;
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: 70% 30%;
+} 
